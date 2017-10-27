@@ -45,6 +45,6 @@ Whereas for formatting the positions of the hexagons with ```translateX translat
 
 Which pushed the every 4th, 5th and 6th based hexagons to the right in every second row.
 
-Everything was taught and learnt through the courtesy of this site:
+Everything was taken and learnt through the courtesy of this site:
 
 https://www.codesmite.com/article/how-to-create-pure-css-hexagonal-grids

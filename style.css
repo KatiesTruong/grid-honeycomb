@@ -1,7 +1,7 @@
 #hex-grid {
   position: absolute;
   margin: 0 auto;
-  width: 110%;
+  width: 100%;
   padding: 0;
 }
 
@@ -38,11 +38,11 @@
   height: 100%;
   background: #CD5360; /*Hexagon colour*/
   -o-transform: skewY(-30deg) rotate(60deg);
-   -moz-transform: skewY(-30deg) rotate(60deg);
-   -webkit-transform: skewY(-30deg) rotate(60deg);
-   -ms-transform: skewY(-30deg) rotate(60deg);
-   transform: skewY(-30deg) rotate(60deg);
-   overflow:hidden;
+  -moz-transform: skewY(-30deg) rotate(60deg);
+  -webkit-transform: skewY(-30deg) rotate(60deg);
+  -ms-transform: skewY(-30deg) rotate(60deg);
+  transform: skewY(-30deg) rotate(60deg);
+  overflow:hidden;
 }
 
 #hex-grid li * {
@@ -61,9 +61,60 @@
   -moz-transform: translateX(50%) rotate(-60deg) skewY(30deg);
   -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
   -ms-transform: translateX(50%) rotate(-60deg) skewY(30deg);
-  transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  transform: translateX(50%) rotate(-60deg) skewY(30deg); /* when moved with only translateX it'll appear as a rhombus*/
 }
 
 #hex-grid li:nth-child(6n+4) {
   margin-left: 0.7%;
+}
+
+/***IMAGE***/
+
+img {
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.hexagon p {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5%;
+}
+
+p {
+  font-size: 1.8vw; /*Allows responsiveness in mobile with Bootstrap*/
+  position: absolute;
+  margin: 0;
+  box-sizing: border-box;
+  color: #FFF;
+  top: 80%;
+  left: 50%;
+  width: 100%;
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -100%);
+}
+
+.button-costume {
+  background-color: #0B3446;
+  color: #FFF;
+  font-family: 'Lato', Arial;
+  border-color: #0B3446;
+
+}
+
+.button-costume:hover {
+  background-color: #104F6A;
+  color: #FFF;
+}
+
+.bottom-aligned {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 7px;
+  left: 0;
 }

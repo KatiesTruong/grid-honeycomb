@@ -77,19 +77,35 @@ img {
   background-size: cover;
 }
 
-.hexagon p {
+.hexagon.hex-paragraph-1.hex-paragraph-2 {
   box-sizing: border-box;
   width: 100%;
   padding: 5%;
 }
 
-p {
-  font-size: 1.8vw; /*Allows responsiveness in mobile with Bootstrap*/
+.hex-paragraph-2 {
+  font-size: 1.5vw; /*Allows responsiveness in mobile with Bootstrap*/
   position: absolute;
   margin: 0;
   box-sizing: border-box;
   color: #FFF;
-  top: 80%;
+  top: 60%;
+  left: 50%;
+  width: 100%;
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -100%);
+}
+
+.hex-paragraph-1 {
+  font-size: 1.5vw; /*Allows responsiveness in mobile with Bootstrap*/
+  position: absolute;
+  margin: 0;
+  box-sizing: border-box;
+  color: #FFF;
+  top: 72%;
   left: 50%;
   width: 100%;
   -o-transform: translate(-50%, -50%);
@@ -104,7 +120,7 @@ p {
   color: #FFF;
   font-family: 'Lato', Arial;
   border-color: #0B3446;
-
+  font-size: 1vw;
 }
 
 .button-costume:hover {
@@ -115,6 +131,8 @@ p {
 .bottom-aligned {
   position: absolute;
   bottom: 0;
-  margin-bottom: 7px;
-  left: 0;
+  margin-bottom: 5vw;
+  margin-top: 4vw;
+  left: 9vw;
+  top: 60%;
 }
